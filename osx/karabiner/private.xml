@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>MSFT</vendorname>
+    <vendorid>0x045e</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>SCULPT</productname>
+    <productid>0x07a5</productid>
+  </deviceproductdef>
+
+  <item>
+    <name>MS Sculpt Keyboard Mapping</name>
+    <identifier>ms.sculpt.kb.kafai</identifier>
+    <device_only>DeviceVendor::MSFT, DeviceProduct::SCULPT</device_only>
+    <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::OPTION_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
+    <autogen>
+      __ScrollWheelToKey__
+      ScrollWheel::LEFT, ModifierFlag::NONE,
+      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __ScrollWheelToKey__
+      ScrollWheel::RIGHT, ModifierFlag::NONE,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>__KeyToKey__ PointingButton::BUTTON4, KeyCode::EXPOSE_ALL</autogen>
+  </item>
+</root>
